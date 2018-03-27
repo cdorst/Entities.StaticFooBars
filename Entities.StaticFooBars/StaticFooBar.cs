@@ -1,7 +1,7 @@
 // Copyright © Christopher Dorst. All rights reserved.
 // Licensed under the GNU General Public License, Version 3.0. See the LICENSE document in the repository root for license information.
 
-using DevOps.Code.Entities.Interfaces.Entity;
+using DevOps.Code.Entities.Interfaces.StaticEntity;
 using Position = ProtoBuf.ProtoMemberAttribute;
 using ProtoBufSerializable = ProtoBuf.ProtoContractAttribute;
 using System;
