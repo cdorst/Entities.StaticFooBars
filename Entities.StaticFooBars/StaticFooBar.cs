@@ -44,5 +44,8 @@ namespace Entities.StaticFooBars
 
         /// <summary>Returns the entity's unique identifier.</summary>
         public int GetKey() => StaticFooBarId;
+
+        /// <summary>Returns an expression defining this entity's unique index (alternate key)</summary>
+        public Expression<Func<StaticFooBar, object>> GetUniqueIndex() => entity => new { entity.Baz, entity.Qux };
     }
 }
