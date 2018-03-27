@@ -13,7 +13,7 @@ namespace Entities.StaticFooBars
 {
     /// <summary>Contains the StaticFooBar entity type</summary>
     [ProtoBufSerializable]
-    [Table("StaticFooBars", Schema = "EntitiesStaticFooBars")]
+    [Table("StaticFooBars", Schema = "Entities")]
     public class StaticFooBar : IStaticEntity<StaticFooBar, int>
     {
         public StaticFooBar()
