@@ -20,24 +20,34 @@ namespace Entities.StaticFooBars
         {
         }
 
-        public StaticFooBar(int baz, DateTimeOffset qux)
+        public StaticFooBar(int baz, DateTimeOffset qux, string thing, string otherThing)
         {
             Baz = baz;
-            Qux = qux;;
+            OtherThing = otherThing;
+            Qux = qux;
+            Thing = thing;;
         }
 
         /// <summary>Contains Baz value</summary>
         [Position(2)]
         public int Baz { get; set; }
 
-        /// <summary>Contains Qux value</summary>
+        /// <summary>Contains OtherThing value</summary>
         [Position(3)]
+        public string OtherThing { get; set; }
+
+        /// <summary>Contains Qux value</summary>
+        [Position(4)]
         public DateTimeOffset Qux { get; set; }
 
         /// <summary>StaticFooBar unique identifier (primary key)</summary>
         [Key]
         [Position(1)]
         public int StaticFooBarId { get; set; }
+
+        /// <summary>Contains Thing value</summary>
+        [Position(5)]
+        public string Thing { get; set; }
 
         /// <summary>Returns a value that uniquely identifies this entity type. Each entity type in the model has a unique identifier.</summary>
         public int GetEntityType() => 4;
@@ -46,6 +56,6 @@ namespace Entities.StaticFooBars
         public int GetKey() => StaticFooBarId;
 
         /// <summary>Returns an expression defining this entity's unique index (alternate key)</summary>
-        public Expression<Func<StaticFooBar, object>> GetUniqueIndex() => entity => new { entity.Baz, entity.Qux };
+        public Expression<Func<StaticFooBar, object>> GetUniqueIndex() => entity => new { entity.Baz, entity.Qux, entity.Thing, entity.OtherThing };
     }
 }
