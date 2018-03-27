@@ -14,20 +14,25 @@ namespace Entities.StaticFooBars
     /// <summary>Contains the StaticFooBar entity type</summary>
     [ProtoBufSerializable]
     [Table("StaticFooBars", Schema = "EntitiesStaticFooBars")]
-    public class StaticFooBar : IStaticEntity<int>
+    public class StaticFooBar : IStaticEntity<StaticFooBar, int>
     {
         public StaticFooBar()
         {
         }
 
-        public StaticFooBar(int baz)
+        public StaticFooBar(int baz, DateTimeOffset qux)
         {
             Baz = baz;
+            Qux = qux;;
         }
 
         /// <summary>Contains Baz value</summary>
         [Position(2)]
         public int Baz { get; set; }
+
+        /// <summary>Contains Qux value</summary>
+        [Position(3)]
+        public DateTimeOffset Qux { get; set; }
 
         /// <summary>StaticFooBar unique identifier (primary key)</summary>
         [Key]
