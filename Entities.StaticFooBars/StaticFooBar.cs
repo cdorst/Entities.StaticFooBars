@@ -25,7 +25,7 @@ namespace Entities.StaticFooBars
             Baz = baz;
             OtherThing = otherThing;
             Qux = qux;
-            Thing = thing;;
+            Thing = thing;
         }
 
         /// <summary>Contains Baz value</summary>
