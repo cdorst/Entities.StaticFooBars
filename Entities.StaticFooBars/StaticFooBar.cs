@@ -49,13 +49,13 @@ namespace Entities.StaticFooBars
         [Position(5)]
         public string Thing { get; set; }
 
-        /// <summary>Returns a value that uniquely identifies this entity type. Each entity type in the model has a unique identifier.</summary>
+        /// <summary>Returns a value that uniquely identifies this entity type. Each entity type in the model has a unique identifier</summary>
         public int GetEntityType() => 4;
 
-        /// <summary>Returns the entity's unique identifier.</summary>
+        /// <summary>Returns the entity's unique identifier</summary>
         public int GetKey() => StaticFooBarId;
 
         /// <summary>Returns an expression defining this entity's unique index (alternate key)</summary>
-        public Expression<Func<StaticFooBar, object>> GetUniqueIndex() => entity => new { entity.Baz, entity.Qux, entity.Thing, entity.OtherThing };
+        public Expression<Func<StaticFooBar, object>> GetUniqueIndex() => entity => new { entity.Baz, entity.OtherThing, entity.Qux, entity.Thing };
     }
 }
