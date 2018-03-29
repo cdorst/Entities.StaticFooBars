@@ -15,12 +15,12 @@
     <PackageLicenseUrl>https://github.com/cdorst/Entities.StaticFooBars/blob/master/LICENSE</PackageLicenseUrl>
     <PackageProjectUrl>https://github.com/cdorst/Entities.StaticFooBars</PackageProjectUrl>
     <RepositoryUrl>https://github.com/cdorst/Entities.StaticFooBars</RepositoryUrl>
-    <Version>1.0.7</Version>
+    <Version>1.0.10</Version>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="CDorst.DevOps.Code.Entities.Metapackages.Annotations" Version="1.0.0" />
-    <PackageReference Include="CDorst.DevOps.Code.Entities.Interfaces.StaticEntity" Version="1.0.3" />
+    <PackageReference Include="CDorst.DevOps.Code.Entities.Metapackages.Annotations" Version="1.0.1" />
+    <PackageReference Include="CDorst.DevOps.Code.Entities.Interfaces.StaticEntity" Version="1.0.4" />
   </ItemGroup>
 
 </Project>
