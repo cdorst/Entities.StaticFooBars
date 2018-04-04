@@ -15,7 +15,7 @@
     <PackageLicenseUrl>https://github.com/cdorst/Entities.StaticFooBars/blob/master/LICENSE</PackageLicenseUrl>
     <PackageProjectUrl>https://github.com/cdorst/Entities.StaticFooBars</PackageProjectUrl>
     <RepositoryUrl>https://github.com/cdorst/Entities.StaticFooBars</RepositoryUrl>
-    <Version>1.0.18</Version>
+    <Version>1.0.19</Version>
   </PropertyGroup>
 
   <ItemGroup>
